@@ -11,8 +11,8 @@ class Greetings
         $this->name = $name;
     }
 
-    public function sayHello(string $name = "Guest"): string
+    public function sayHello(string $name = "You're Guest"): string
     {
-        return "Hello $name, My name is $name.";
+        return "Hello $name, My name is $this->name.";
     }
 }
